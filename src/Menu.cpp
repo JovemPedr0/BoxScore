@@ -11,14 +11,14 @@ Menu::Menu()
 
 }
 
- void gotoxy(int x, int y){
+ void Menu:: gotoxy(int x, int y){
         COORD c;
         c.X = x;
         c.Y = y;
         SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),c);
 }
 
-int show(){
+int Menu :: show(){
         /*//menu*/
         int opcao;
         do{

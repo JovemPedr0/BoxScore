@@ -1,9 +1,14 @@
 #include <iostream>
+#include "Time.h"
+#include "Menu.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    Menu exemplo;
+
+    exemplo.show();
+
     return 0;
 }

@@ -1,10 +1,21 @@
 # depslib dependency file v1.0
-1584205420 source:c:\users\gabriela\downloads\mateus\uf\p2\lp1\projeto\box_score\main.cpp
+1630607014 source:c:\users\gabriela\downloads\mateus\uf\p2\lp1\projeto\box_score\main.cpp
 	<iostream>
+	"Time.h"
+	"Menu.h"
 
 1630606157 source:c:\users\gabriela\downloads\mateus\uf\p2\lp1\projeto\box_score\src\time.cpp
 	"Time.h"
 
 1630606157 c:\users\gabriela\downloads\mateus\uf\p2\lp1\projeto\box_score\include\time.h
 	<string>
+
+1630606575 c:\users\gabriela\downloads\mateus\uf\p2\lp1\projeto\box_score\include\menu.h
+
+1630607094 source:c:\users\gabriela\downloads\mateus\uf\p2\lp1\projeto\box_score\src\menu.cpp
+	"Menu.h"
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<windows.h>
 
