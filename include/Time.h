@@ -17,15 +17,16 @@ class Time
         int nAssists[MAX_JOGADORES] = {0};
         int nRoubos[MAX_JOGADORES] = {0};
         int nRebotes[MAX_JOGADORES] = {0};
-        int nTurnover[MAX_JOGADORES] = {0};
+        int nTurnovers[MAX_JOGADORES] = {0};
         int nFaltas[MAX_JOGADORES] = {0};
 
         void Cadastrar_time();
-        void Add_pontos();
-        void Add_rebotes();
-        void Add_assists();
-        void Add_turnover();
-        void Add_falta();
+        void Adicionar_pontos();
+        void Adicionar_rebotes();
+        void Adicionar_roubos();
+        void Adicionas_assistencias();
+        void Adicionar_turnovers();
+        void Adicionar_faltas();
 
 };
 

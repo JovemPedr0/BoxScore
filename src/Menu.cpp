@@ -3,8 +3,11 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <windows.h>
+#include "Time.h"
+#include "Menu2.h"
 
 int a, b, L, L2;
+Menu2 menu_jogo = Menu2();
 
 Menu::Menu()
 {
@@ -18,7 +21,7 @@ Menu::Menu()
         SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),c);
 }
 
-int Menu :: show(){
+int Menu :: show(Time team_a, Time team_b){
         /*//menu*/
         int opcao;
         do{
@@ -31,7 +34,7 @@ int Menu :: show(){
             b=2;
             system("cls");
             system("color 0f");
-            printf("\n\n      1 - Cadastrar Times \n      2 - Ir para Partida \n      3 - Salvar Dados \n      4 - Sair\n");
+            printf("\n\n      1 - Cadastrar Times \n      2 - Ir para Partida \n      9 - Sair\n");
 
             do{
                 gotoxy(1,L);
@@ -44,11 +47,15 @@ int Menu :: show(){
                         a=getch();
                 }
                 if(a == 80 && b < 5){
-                    L2=L;L++;b++;
+                    L2=L;
+                    L++;
+                    b++;
                 }/*seta p/baixo*/
 
                 if(a == 72 && b > 2){
-                        L2=L;L--;b--;
+                        L2=L;
+                        L--;
+                        b--;
                 }/*seta p/cima */
 
                 if(L!=L2){
@@ -63,23 +70,21 @@ int Menu :: show(){
             switch (opcao){
                 case 1:
                     system("cls");
-                    printf("\n    GAME\n");
-                    Sleep(2000);
+                    printf("\n    Cadastrar Time\n");
+
+                    team_a.Cadastrar_time();
+                    team_b.Cadastrar_time();
+
                     break;
 
                 case 2:
                     system("cls");
-                    printf("\n    Ranking\n");
-                    Sleep(2000);
+                    printf("\n Começou Partida\n");
+                    menu_jogo.show(team_a, team_b);
+
                     break;
 
-                case 3:
-                    system("cls");
-                    printf("\n    Creditos\n");
-                    Sleep(2000);
-                    break;
-
-                case 4:
+                case 9:
                     system("cls");
                     printf("voce pediu para sair, prencione qualquer tecla para continuar\n");
                     break;

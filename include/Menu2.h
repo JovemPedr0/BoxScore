@@ -1,11 +1,10 @@
-#ifndef MENU_H
-#define MENU_H
-#include "Time.h"
+#ifndef MENU2_H
+#define MENU2_H
 
-class Menu
-{
+
+class Menu2{
     public:
-        Menu();
+        Menu2();
         int a, b, L, L2;
 
         void gotoxy(int x, int y);
