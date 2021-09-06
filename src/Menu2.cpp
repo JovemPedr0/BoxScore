@@ -74,7 +74,7 @@ int Menu2::show(Time team_a, Time team_b, Boxscore total){
 
             switch (opcao){
 
-                case 1:
+                case 1:printf("\n %d X %d\n", )
                     system("cls");
                     printf("\n    Adicionar Pontos\n");
 
