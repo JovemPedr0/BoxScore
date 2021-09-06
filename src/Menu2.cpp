@@ -193,6 +193,9 @@ int Menu2::show(Time team_a, Time team_b, Boxscore total){
                     system("cls");
                     printf("\n    Fim de Jogo\n");
                     total.getPtsTotal(team_a, team_b);
+                    total.getResumoJogo(team_a);
+                    system("pause");
+                    total.getResumoJogo(team_b);
                     system("pause");
                     break;
 
