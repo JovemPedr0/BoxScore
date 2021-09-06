@@ -34,10 +34,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Boxscore.h" />
 		<Unit filename="include/Menu.h" />
 		<Unit filename="include/Menu2.h" />
 		<Unit filename="include/Time.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Boxscore.cpp" />
 		<Unit filename="src/Menu.cpp" />
 		<Unit filename="src/Menu2.cpp" />
 		<Unit filename="src/Time.cpp" />
