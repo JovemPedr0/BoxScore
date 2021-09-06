@@ -36,20 +36,20 @@ int Menu2::show(Time team_a, Time team_b){
             b2 = 2;
             system("cls");
             system("color 0f");
-            printf("\n\n      1 - Adicionar Pontos \n      2 - Adicionar Rebotes \n      3 - Adicionar Roubos \n      4 - Adicionar Assistencias\n      5 - Adicionar Turnovers\n      6 - Adicionar Faltas\n");
+            printf("\n\n      1 - Adicionar Pontos \n      2 - Adicionar Rebotes \n      3 - Adicionar Roubos \n      4 - Adicionar Assistencias\n      5 - Adicionar Turnovers\n      6 - Adicionar Faltas\n      9 - Fim de Jogo\n ");
 
             do{
-                gotoxy(1,L);
+                gotoxy(1,L3);
 
                 printf("-->");
 
-                gotoxy(10,6);
+                gotoxy(5,10);
 
                 if(kbhit){
                     a2 = getch();
                 }
-                if(a2 == 80 && b2 < 5){
-                    L4 = L;
+                if(a2 == 80 && b2 < 8){
+                    L4 = L3;
                     L3++;
                     b2++;
                 }/*seta p/baixo*/
@@ -78,13 +78,17 @@ int Menu2::show(Time team_a, Time team_b){
                     printf("\n    Adicionar Pontos\n");
 
                     printf("Digite o Time A ou B: ");
-                    scanf("%c%*c", &opcao_time);
+                    scanf("%c", &opcao_time);
 
-                    if(opcao == 'A'){
+                    if(opcao_time == 'A'){
                         team_a.Adicionar_pontos();
 
-                    }else if(opcao == 'B'){
+                    }else if(opcao_time == 'B'){
                         team_b.Adicionar_pontos();
+
+                    }else{
+                        printf("Digite o Time A ou B: ");
+                        scanf("%c", &opcao_time);
                     }
 
                     break;
@@ -92,36 +96,102 @@ int Menu2::show(Time team_a, Time team_b){
                 case 2:
                     system("cls");
                     printf("\n    Adicionar Rebotes\n");
-                    //Adicionar_rebotes();
+
+                    printf("Digite o Time A ou B: ");
+                    scanf("%c", &opcao_time);
+
+                    if(opcao_time == 'A'){
+                        team_a.Adicionar_rebotes();
+
+                    }else if(opcao_time == 'B'){
+                        team_b.Adicionar_rebotes();
+
+                    }else{
+                        printf("Digite o Time A ou B: ");
+                        scanf("%c", &opcao_time);
+                    }
                     break;
 
                 case 3:
                     system("cls");
                     printf("\n    Adicionar Roubos\n");
-                    //Adicionar_roubos();
+
+                    printf("Digite o Time A ou B: ");
+                    scanf("%c", &opcao_time);
+
+                    if(opcao_time == 'A'){
+                        team_a.Adicionar_roubos();
+
+                    }else if(opcao_time == 'B'){
+                        team_b.Adicionar_roubos();
+
+                    }else{
+                        printf("Digite o Time A ou B: ");
+                        scanf("%c", &opcao_time);
+                    }
                     break;
 
                 case 4:
                     system("cls");
                     printf("\n    Adicionar Assistencias\n");
-                    //Adicionar_assistencias();
+
+                    printf("Digite o Time A ou B: ");
+                    scanf("%c", &opcao_time);
+
+                    if(opcao_time == 'A'){
+                        team_a.Adicionar_assistencias();
+
+                    }else if(opcao_time == 'B'){
+                        team_b.Adicionar_assistencias();
+
+                    }else{
+                        printf("Digite o Time A ou B: ");
+                        scanf("%c", &opcao_time);
+                    }
                     break;
 
                 case 5:
                     system("cls");
                     printf("\n    Adicionar Turnovers\n");
-                    //Adicionar_turnovers();
+
+                    printf("Digite o Time A ou B: ");
+                    scanf("%c", &opcao_time);
+
+                    if(opcao_time == 'A'){
+                        team_a.Adicionar_turnovers();
+
+                    }else if(opcao_time == 'B'){
+                        team_b.Adicionar_turnovers();
+
+                    }else{
+                        printf("Digite o Time A ou B: ");
+                        scanf("%c", &opcao_time);
+                    }
                     break;
 
                 case 6:
                     system("cls");
                     printf("\n    Adicionar Faltas\n");
-                    //Adicionar_assistencias();
+
+                    printf("Digite o Time A ou B: ");
+                    scanf("%c", &opcao_time);
+
+                    if(opcao_time == 'A'){
+                        team_a.Adicionar_faltas();
+
+                    }else if(opcao_time == 'B'){
+                        team_b.Adicionar_faltas();
+
+                    }else{
+                        printf("Digite o Time A ou B: ");
+                        scanf("%c", &opcao_time);
+                    }
                     break;
 
-                case 9:
+                case 7:
                     system("cls");
                     printf("\n    Fim de Jogo\n");
+                    system("pause");
                     break;
 
                 default:
@@ -130,7 +200,7 @@ int Menu2::show(Time team_a, Time team_b){
                     system("pause");
                     goto inicio;
             }
-        }while(opcao != 9);
+        }while(opcao != 7);
 
         return 0;
     }

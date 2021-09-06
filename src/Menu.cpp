@@ -84,9 +84,9 @@ int Menu :: show(Time team_a, Time team_b){
 
                     break;
 
-                case 9:
+                case 3:
                     system("cls");
-                    printf("voce pediu para sair, prencione qualquer tecla para continuar\n");
+                    printf("Voce pediu para sair, prencione qualquer tecla para continuar\n");
                     break;
 
                 default:
@@ -95,7 +95,7 @@ int Menu :: show(Time team_a, Time team_b){
                     system("pause");
                     goto inicio;
             }
-        }while(opcao!=4);
+        }while(opcao!=3);
 
         return 0;
     }

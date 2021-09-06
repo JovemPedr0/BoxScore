@@ -35,9 +35,11 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Menu.h" />
+		<Unit filename="include/Menu2.h" />
 		<Unit filename="include/Time.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Menu.cpp" />
+		<Unit filename="src/Menu2.cpp" />
 		<Unit filename="src/Time.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

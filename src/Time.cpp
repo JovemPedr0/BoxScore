@@ -11,12 +11,12 @@ Time::Time(){
 
 void Time::Cadastrar_time(){
 
-    cout << "Digite o Nome do Time\n" << endl;
+    cout << "\nDigite o Nome do Time" << endl;
     getline(cin.ignore(), nomeTime);
 
     for(int i = 0; i < MAX_JOGADORES; i++){
 
-        cout << "Digite o Nome do Jogador " << i + 1 << ": " << endl;
+        cout << "\nDigite o Nome do Jogador " << i + 1 << ": " << endl;
         getline(cin.ignore(), nomeJogador[i]);
 
         cout << "Digite o Número do Jogador " << i + 1 << ": " << endl;
@@ -85,7 +85,7 @@ void Time::Adicionar_faltas(){
     }
 }
 
-void Time::Adicionas_assistencias(){
+void Time::Adicionar_assistencias(){
     int num;
 
     cout << "Digite o numero do jogador que deu a assistência: " << endl;

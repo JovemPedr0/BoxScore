@@ -24,7 +24,7 @@ class Time
         void Adicionar_pontos();
         void Adicionar_rebotes();
         void Adicionar_roubos();
-        void Adicionas_assistencias();
+        void Adicionar_assistencias();
         void Adicionar_turnovers();
         void Adicionar_faltas();
 
