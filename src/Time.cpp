@@ -17,10 +17,11 @@ void Time::Cadastrar_time(){
     for(int i = 0; i < MAX_JOGADORES; i++){
 
         cout << "\nDigite o Nome do Jogador " << i + 1 << ": " << endl;
-        getline(cin.ignore(), nomeJogador[i]);
+        getline(cin, nomeJogador[i]);
 
         cout << "Digite o N�mero do Jogador " << i + 1 << ": " << endl;
         cin >> numeroJogador[i];
+        scanf("%*c");
     }
 }
 
