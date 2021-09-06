@@ -11,7 +11,8 @@ void Boxscore::getPtsTotal(Time team_a, Time team_b){
         nPontuacaoTimeB += team_b.nPontosMarcados[i];
     }
 
-    printf("%d X %d \n", nPontuacaoTimeA, nPontuacaoTimeB);
+    printf("%s x %s\n", team_a, team_b);
+    printf("%d x %d\n", nPontuacaoTimeA, nPontuacaoTimeB);
 } 
 
     
