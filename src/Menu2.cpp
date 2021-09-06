@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <windows.h>
+#include <iostream>
 
 int a2, b2, L3, L4;
 
@@ -80,8 +81,7 @@ int Menu2::show(Time team_a, Time team_b, Boxscore total){
 
                     printf("Digite o Time A ou B: ");
                     scanf("%*c%c", &opcao_time);
-
-                    if(opcao_time == 'A'){
+                        if(opcao_time == 'A'){
                         team_a.Adicionar_pontos();
 
                     }else if(opcao_time == 'B'){

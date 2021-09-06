@@ -1,5 +1,6 @@
 #include "Boxscore.h"
 #include "Time.h"
+#include <iostream>
 
 Boxscore::Boxscore(){
 
@@ -11,21 +12,17 @@ void Boxscore::getPtsTotal(Time team_a, Time team_b){
         nPontuacaoTimeB += team_b.nPontosMarcados[i];
     }
 
-    printf("%s X %s\n", team_a.nomeTime, team_b.nomeTime);
-    printf("%d X %d \n", nPontuacaoTimeA, nPontuacaoTimeB);
-
-    
-    
-
+    cout << team_a.nomeTime << " X " << team_b.nomeTime << endl;
+    cout << nPontuacaoTimeA << " X " << nPontuacaoTimeB << endl;
 }
 
 void Boxscore::getResumoJogo(Time team_a){
     printf("RESUMO DO JOGO\n");
+    cout << team_a.nomeTime << endl;
     printf("------------------------------------------------------------------------------------------------------------------------------------------------------\n");
-    printf(" Nome do Jogador Numero do Jogador\tPontos Marcados\tNúmero de Assitências\tNúmero de Roubos\tNúmero de Rebotes\tNúmero de Turnovers\tNúmero de Faltas\n");
+    printf(" Nome do Jogador Numero do Jogador\tPontos Marcados\tAssitências\tRoubos\tRebotes\tTurnovers\tFaltas\n");
     printf("------------------------------------------------------------------------------------------------------------------------------------------------------\n");
     
     for (int i = 0; i < MAX_JOGADORES; i++){
-        printf("%s %d\t%d\t%d\t%d\t%d\t%d\t%d\n", team_a.nomeJogador[i], team_a.numeroJogador[i], team_a.nPontosMarcados[i], team_a.nAssists[i], team_a.nRoubos[i], team_a.nRebotes[i], team_a.nTurnovers[i], team_a.nFaltas[i]);
-    }
+       cout << team_a.nomeJogador[i] << "\t" << team_a.numeroJogador[i] << "\t" << team_a.nPontosMarcados[i] << "\t" << team_a.nAssists[i] << "\t" << team_a.nRoubos[i] << "\t" << team_a.nRebotes[i] << "\t" <<team_a.nTurnovers[i] << "\t" << team_a.nFaltas[i] << endl;
 }  
