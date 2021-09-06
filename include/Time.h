@@ -5,8 +5,7 @@
 
 using namespace std;
 
-class Time
-{
+class Time{
     public:
         Time();
         string nomeTime;

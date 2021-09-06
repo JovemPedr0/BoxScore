@@ -1,6 +1,7 @@
 #include "Menu.h"
 #include "Menu2.h"
 #include "Time.h"
+#include "Boxscore.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
@@ -19,7 +20,7 @@ void Menu2::gotoxy(int x, int y){
         SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),c);
 }
 
-int Menu2::show(Time team_a, Time team_b){
+int Menu2::show(Time team_a, Time team_b, Boxscore total){
 
         char opcao_time;
 
@@ -73,7 +74,7 @@ int Menu2::show(Time team_a, Time team_b){
 
             switch (opcao){
 
-                case 1:
+                case 1:printf("\n %d X %d\n", )
                     system("cls");
                     printf("\n    Adicionar Pontos\n");
 
@@ -191,6 +192,7 @@ int Menu2::show(Time team_a, Time team_b){
                 case 7:
                     system("cls");
                     printf("\n    Fim de Jogo\n");
+                    total.getPtsTotal(team_a, team_b);
                     system("pause");
                     break;
 

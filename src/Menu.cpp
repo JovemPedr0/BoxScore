@@ -4,6 +4,7 @@
 #include <conio.h>
 #include <windows.h>
 #include "Time.h"
+#include "Boxscore.h"
 #include "Menu2.h"
 
 int a, b, L, L2;
@@ -21,17 +22,17 @@ Menu::Menu()
         SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),c);
 }
 
-int Menu :: show(Time team_a, Time team_b){
+int Menu::show(Time team_a, Time team_b, Boxscore total){
         /*//menu*/
         int opcao;
         do{
             inicio:
 
-            opcao=0;
+            opcao = 0;
 
-            L=2;
-            L2=2;
-            b=2;
+            L = 2;
+            L2 = 2;
+            b = 2;
             system("cls");
             system("color 0f");
             printf("\n\n      1 - Cadastrar Times \n      2 - Ir para Partida \n      9 - Sair\n");
@@ -44,7 +45,7 @@ int Menu :: show(Time team_a, Time team_b){
                 gotoxy(10,6);
 
                 if(kbhit){
-                        a=getch();
+                    a = getch();
                 }
                 if(a == 80 && b < 5){
                     L2=L;
@@ -62,7 +63,7 @@ int Menu :: show(Time team_a, Time team_b){
                         gotoxy(1,L2);printf("   ");L2=L;
                 }
                 if(a == 13){
-                        opcao=b-1;
+                        opcao = b-1;
                 }
 
             }while(opcao == 0);
@@ -79,9 +80,8 @@ int Menu :: show(Time team_a, Time team_b){
 
                 case 2:
                     system("cls");
-                    printf("\n Começou Partida\n");
+                    printf("\n Comeï¿½ou Partida\n");
                     menu_jogo.show(team_a, team_b);
-
                     break;
 
                 case 3:
@@ -95,7 +95,7 @@ int Menu :: show(Time team_a, Time team_b){
                     system("pause");
                     goto inicio;
             }
-        }while(opcao!=3);
+        }while(opcao != 3);
 
         return 0;
     }
