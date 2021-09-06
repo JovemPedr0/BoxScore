@@ -79,9 +79,14 @@ int Menu :: show(Time team_a, Time team_b){
 
                 case 2:
                     system("cls");
+<<<<<<< Updated upstream
                     printf("\n Começou Partida\n");
                     menu_jogo.show(team_a, team_b);
 
+=======
+                    printf("\n Comeï¿½ou Partida\n");
+                    menu_jogo.show(team_a, team_b, total);
+>>>>>>> Stashed changes
                     break;
 
                 case 3:

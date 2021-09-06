@@ -78,7 +78,7 @@ int Menu2::show(Time team_a, Time team_b){
                     printf("\n    Adicionar Pontos\n");
 
                     printf("Digite o Time A ou B: ");
-                    scanf("%c", &opcao_time);
+                    scanf("%*c%c", &opcao_time);
 
                     if(opcao_time == 'A'){
                         team_a.Adicionar_pontos();
@@ -88,7 +88,7 @@ int Menu2::show(Time team_a, Time team_b){
 
                     }else{
                         printf("Digite o Time A ou B: ");
-                        scanf("%c", &opcao_time);
+                        scanf("%*c%c", &opcao_time);
                     }
 
                     break;
@@ -98,7 +98,7 @@ int Menu2::show(Time team_a, Time team_b){
                     printf("\n    Adicionar Rebotes\n");
 
                     printf("Digite o Time A ou B: ");
-                    scanf("%c", &opcao_time);
+                    scanf("%*c%c", &opcao_time);
 
                     if(opcao_time == 'A'){
                         team_a.Adicionar_rebotes();
@@ -108,7 +108,7 @@ int Menu2::show(Time team_a, Time team_b){
 
                     }else{
                         printf("Digite o Time A ou B: ");
-                        scanf("%c", &opcao_time);
+                        scanf("%*c%c", &opcao_time);
                     }
                     break;
 
@@ -117,7 +117,7 @@ int Menu2::show(Time team_a, Time team_b){
                     printf("\n    Adicionar Roubos\n");
 
                     printf("Digite o Time A ou B: ");
-                    scanf("%c", &opcao_time);
+                    scanf("%*c%c", &opcao_time);
 
                     if(opcao_time == 'A'){
                         team_a.Adicionar_roubos();
@@ -127,7 +127,7 @@ int Menu2::show(Time team_a, Time team_b){
 
                     }else{
                         printf("Digite o Time A ou B: ");
-                        scanf("%c", &opcao_time);
+                        scanf("%*c%c", &opcao_time);
                     }
                     break;
 
@@ -136,7 +136,7 @@ int Menu2::show(Time team_a, Time team_b){
                     printf("\n    Adicionar Assistencias\n");
 
                     printf("Digite o Time A ou B: ");
-                    scanf("%c", &opcao_time);
+                    scanf("%*c%c", &opcao_time);
 
                     if(opcao_time == 'A'){
                         team_a.Adicionar_assistencias();
@@ -146,7 +146,7 @@ int Menu2::show(Time team_a, Time team_b){
 
                     }else{
                         printf("Digite o Time A ou B: ");
-                        scanf("%c", &opcao_time);
+                        scanf("%*c%c", &opcao_time);
                     }
                     break;
 
@@ -155,7 +155,7 @@ int Menu2::show(Time team_a, Time team_b){
                     printf("\n    Adicionar Turnovers\n");
 
                     printf("Digite o Time A ou B: ");
-                    scanf("%c", &opcao_time);
+                    scanf("%*c%c", &opcao_time);
 
                     if(opcao_time == 'A'){
                         team_a.Adicionar_turnovers();
@@ -165,7 +165,7 @@ int Menu2::show(Time team_a, Time team_b){
 
                     }else{
                         printf("Digite o Time A ou B: ");
-                        scanf("%c", &opcao_time);
+                        scanf("%*c%c", &opcao_time);
                     }
                     break;
 
@@ -174,7 +174,7 @@ int Menu2::show(Time team_a, Time team_b){
                     printf("\n    Adicionar Faltas\n");
 
                     printf("Digite o Time A ou B: ");
-                    scanf("%c", &opcao_time);
+                    scanf("%*c%c", &opcao_time);
 
                     if(opcao_time == 'A'){
                         team_a.Adicionar_faltas();
@@ -184,7 +184,7 @@ int Menu2::show(Time team_a, Time team_b){
 
                     }else{
                         printf("Digite o Time A ou B: ");
-                        scanf("%c", &opcao_time);
+                        scanf("%*c%c", &opcao_time);
                     }
                     break;
 
