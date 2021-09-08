@@ -13,16 +13,16 @@ void Boxscore::getPtsTotal(Time team_a, Time team_b){
     }
 
     cout << "------------------------------------------------------" << endl;
-    cout << "|" << "\t" << team_a.nomeTime << " X " << team_b.nomeTime << "|" << endl;
-    cout << "|" << "\t" << nPontuacaoTimeA << " X " << nPontuacaoTimeB << "|" << endl;
+    cout << "\t" << team_a.nomeTime << " X " << team_b.nomeTime << endl;
+    cout << "\t" << nPontuacaoTimeA << " X " << nPontuacaoTimeB << endl;
     cout << "------------------------------------------------------" << endl;
 }
 
 void Boxscore::getResumoJogo(Time team_a){
-    printf("RESUMO DO JOGO\n");
+    printf("\n\tRESUMO DO JOGO\n");
     cout << team_a.nomeTime << endl;
     printf("------------------------------------------------------------------------------------------------------------------\n");
-    printf(" Nome do Jogador\tNumero do Jogador\t\tPontos\t\tAssitências\t\tRoubos\t\tRebotes\t\tTurnovers\t\tFaltas\n");
+    printf(" Nome do Jogador Numero do Jogador Pontos Assitências Roubos Rebotes Turnovers Faltas\n");
     printf("------------------------------------------------------------------------------------------------------------------\n");
 
     for (int i = 0; i < MAX_JOGADORES; i++){
