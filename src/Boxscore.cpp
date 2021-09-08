@@ -26,6 +26,6 @@ void Boxscore::getResumoJogo(Time team_a){
     printf("------------------------------------------------------------------------------------------------------------------\n");
 
     for (int i = 0; i < MAX_JOGADORES; i++){
-       cout << team_a.nomeJogador[i] << "\t\t" << team_a.numeroJogador[i] << "\t" << team_a.nPontosMarcados[i] << "\t" << team_a.nAssists[i] << "\t" << team_a.nRoubos[i] << "\t" << team_a.nRebotes[i] << "\t" <<team_a.nTurnovers[i] << "\t" << team_a.nFaltas[i] << endl;
+       cout << team_a.nomeJogador[i] << "\t\t" << team_a.numeroJogador[i] << "\t\t" << team_a.nPontosMarcados[i] << "\t\t" << team_a.nAssists[i] << "\t\t" << team_a.nRoubos[i] << "\t\t" << team_a.nRebotes[i] << "\t\t" <<team_a.nTurnovers[i] << "\t\t" << team_a.nFaltas[i] << endl;
     }
 }
