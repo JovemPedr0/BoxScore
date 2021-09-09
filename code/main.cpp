@@ -1,35 +1,18 @@
 #include <iostream>
-#include <string.h>
-#include <vector>
-
-#define MAX_JOGADORES 12
+#include "Time.h"
+#include "Boxscore.h"
+#include "Menu.h"
 
 using namespace std;
 
-string nomeTime;
-int qJogadores = 0;
-
-typedef struct {
-    string nomeJogador;
-    int numeroJogador;
-    string posJogador;
-    int nPontosMarcados;
-    int nAssists;
-    int nRoubos;
-    int nRebotes;
-    int nTurnover;
-}tJogadores;
-
-tJogadores jogadores[MAX_JOGADORES];
-
-void InicioPrograma(){
-    cout << "Bem Vindo!" << endl;  
-}
-
-
 int main(){
-    
-    
-    
+
+    Menu exemplo;
+    Time team_a = Time();
+    Time team_b = Time();
+    Boxscore total = Boxscore();
+
+    exemplo.show(team_a, team_b, total);
+
     return 0;
 }
