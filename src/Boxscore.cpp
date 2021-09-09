@@ -36,7 +36,7 @@ void Boxscore::SalvaBoxscore(Time team_a, Time team_b){
     ofstream stream;
     int i;
 
-    stream.open("partida.csv", ios::out);
+    stream.open("partida.csv", ios::app);
 
     if (!stream.is_open()){
         
