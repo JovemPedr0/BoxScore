@@ -46,7 +46,7 @@ void Boxscore::SalvaBoxscore(Time team_a, Time team_b){
     stream << nPontuacaoTimeA << endl;
 
     for(i = 0; i < MAX_JOGADORES; i++){
-       stream << team_a.nomeJogador[i] << team_a.numeroJogador[i] << team_a.nPontosMarcados[i] << team_a.nAssists << team_a.nRoubos[i] << team_a.nRebotes << team_a.nTurnovers[i] << team_a.nFaltas[i] << endl;
+       stream << team_a.nomeJogador[i] << " " << team_a.numeroJogador[i] << " " << team_a.nPontosMarcados[i] << " " << team_a.nAssists << " " << team_a.nRoubos[i] << " " << team_a.nRebotes << " " << team_a.nTurnovers[i] << " " << team_a.nFaltas[i] << endl;
     }
     
     stream << team_b.nomeTime << endl;
@@ -54,7 +54,7 @@ void Boxscore::SalvaBoxscore(Time team_a, Time team_b){
     
     
     for(i = 0; i < MAX_JOGADORES; i++){
-       stream << team_b.nomeJogador[i] << team_b.numeroJogador[i] << team_b.nPontosMarcados[i] << team_b.nAssists << team_b.nRoubos[i] << team_b.nRebotes << team_b.nTurnovers[i] << team_b.nFaltas[i] << endl;
+       stream << team_b.nomeJogador[i] << " " << team_b.numeroJogador[i] << " " << team_b.nPontosMarcados[i] << " " << team_b.nAssists << " " << team_b.nRoubos[i] << " " << team_b.nRebotes << " " << team_b.nTurnovers[i] << " " << team_b.nFaltas[i] << endl;
     }
 
     stream.close();
