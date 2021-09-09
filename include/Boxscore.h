@@ -9,6 +9,7 @@ class Boxscore{
         int nPontuacaoTimeB = 0;
         void getPtsTotal(Time team_a, Time team_b);
         void getResumoJogo(Time team_a);
+        void SalvaBoxscore(Time team_a, Time team_b);
 };
 
 

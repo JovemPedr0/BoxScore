@@ -80,7 +80,7 @@ int Menu::show(Time team_a, Time team_b, Boxscore total){
 
                 case 2:
                     system("cls");
-                    printf("\n Come�ou Partida\n");
+                    printf("\n Comecou Partida\n");
                     menu_jogo.show(team_a, team_b, total);
                     break;
 
