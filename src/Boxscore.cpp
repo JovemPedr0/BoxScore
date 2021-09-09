@@ -24,7 +24,7 @@ void Boxscore::getResumoJogo(Time team_a){
     printf("\n\tRESUMO DO JOGO\n");
     cout << team_a.nomeTime << endl;
     printf("------------------------------------------------------------------------------------------------------------------\n");
-    printf(" Nome do Jogador Numero\t  Pontos\t  Assitências\t  Roubos\t  Rebotes\t  Turnovers\t  Faltas\n");
+    printf("Nome do Jogador Numero\t  Pontos\t  Assitências\t  Roubos\t  Rebotes\t  Turnovers\t  Faltas\n");
     printf("------------------------------------------------------------------------------------------------------------------\n");
 
     for (int i = 0; i < MAX_JOGADORES; i++){
