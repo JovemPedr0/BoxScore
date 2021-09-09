@@ -1,6 +1,9 @@
 #include "Boxscore.h"
 #include "Time.h"
 #include <iostream>
+#include <fstream>
+
+using namespace std;
 
 Boxscore::Boxscore(){
 
@@ -30,31 +33,29 @@ void Boxscore::getResumoJogo(Time team_a){
 }
 
 void Boxscore::SalvaBoxscore(Time team_a, Time team_b){
-    FILE *arq;
+    ofstream stream;
     int i;
 
-    arq = fopen("partida.csv", "w");
-    if(arq == NULL){
-        return;
-    }
-    fprintf(arq,"%s\n", team_a.nomeTime);
-    fprintf(arq,"%d\n", nPontuacaoTimeA);
+    stream.open("partida.csv", ios::out);
 
-    for(i = 0; i < MAX_JOGADORES; i++){
-       fprintf(arq, "%s %d %d %d %d %d %d %d\n", team_a.nomeJogador[i], team_a.numeroJogador[i], team_a.nPontosMarcados[i], 
-       team_a.nAssists[i], team_a.nRoubos[i], team_a.nRebotes[i], team_a.nTurnovers[i], team_a.nFaltas[i]);
-    }
-
-    fprintf(arq,"%s\n", team_b.nomeTime);
-    fprintf(arq,"%d\n", nPontuacaoTimeB);
-
-    for(i = 0; i < MAX_JOGADORES; i++){
-       fprintf(arq, "%s %d %d %d %d %d %d %d\n", team_b.nomeJogador[i], team_b.numeroJogador[i], team_b.nPontosMarcados[i], 
-       team_b.nAssists[i], team_b.nRoubos[i], team_b.nRebotes[i], team_b.nTurnovers[i], team_b.nFaltas[i]);
-    }
-
-    if(fclose(arq) == 0){
-        cout << "Partida salva com sucesso !" << endl;
+    if (!stream.is_open()){
+        
     }
     
+    stream << team_a.nomeTime << endl;
+    stream << nPontuacaoTimeA << endl;
+
+    for(i = 0; i < MAX_JOGADORES; i++){
+       stream << team_a.nomeJogador[i] << team_a.numeroJogador[i] << team_a.nPontosMarcados[i] << team_a.nAssists << team_a.nRoubos[i] << team_a.nRebotes << team_a.nTurnovers[i] << team_a.nFaltas[i] << endl;
+    }
+    
+    stream << team_b.nomeTime << endl;
+    stream << nPontuacaoTimeB << endl;
+    
+    
+    for(i = 0; i < MAX_JOGADORES; i++){
+       stream << team_b.nomeJogador[i] << team_b.numeroJogador[i] << team_b.nPontosMarcados[i] << team_b.nAssists << team_b.nRoubos[i] << team_b.nRebotes << team_b.nTurnovers[i] << team_b.nFaltas[i] << endl;
+    }
+
+    stream.close();
 }
