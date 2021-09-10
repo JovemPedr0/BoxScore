@@ -80,8 +80,11 @@ int Menu2::show(Time team_a, Time team_b, Boxscore total){
                     printf("\n    Adicionar Pontos\n");
 
                     printf("Digite o Time A ou B: ");
-                    scanf("%*c%c", &opcao_time);
-                        if(opcao_time == 'A'){
+                    fflush(stdin);
+                    cin >> opcao_time;
+                    fflush(stdin);
+
+                    if(opcao_time == 'A'){
                         team_a.Adicionar_pontos();
 
                     }else if(opcao_time == 'B'){
@@ -89,7 +92,8 @@ int Menu2::show(Time team_a, Time team_b, Boxscore total){
 
                     }else{
                         printf("Digite o Time A ou B: ");
-                        scanf("%*c%c", &opcao_time);
+                        cin >> opcao_time;
+                        fflush(stdin);
                     }
 
                     break;
@@ -98,8 +102,10 @@ int Menu2::show(Time team_a, Time team_b, Boxscore total){
                     system("cls");
                     printf("\n    Adicionar Rebotes\n");
 
+                    fflush(stdin);
                     printf("Digite o Time A ou B: ");
-                    scanf("%*c%c", &opcao_time);
+                    cin >> opcao_time;
+                    fflush(stdin);
 
                     if(opcao_time == 'A'){
                         team_a.Adicionar_rebotes();
@@ -109,7 +115,8 @@ int Menu2::show(Time team_a, Time team_b, Boxscore total){
 
                     }else{
                         printf("Digite o Time A ou B: ");
-                        scanf("%*c%c", &opcao_time);
+                        cin >> opcao_time;
+                        fflush(stdin);
                     }
                     break;
 
@@ -117,8 +124,10 @@ int Menu2::show(Time team_a, Time team_b, Boxscore total){
                     system("cls");
                     printf("\n    Adicionar Roubos\n");
 
+                    fflush(stdin);
                     printf("Digite o Time A ou B: ");
-                    scanf("%*c%c", &opcao_time);
+                    cin >> opcao_time;
+                    fflush(stdin);
 
                     if(opcao_time == 'A'){
                         team_a.Adicionar_roubos();
@@ -128,7 +137,8 @@ int Menu2::show(Time team_a, Time team_b, Boxscore total){
 
                     }else{
                         printf("Digite o Time A ou B: ");
-                        scanf("%*c%c", &opcao_time);
+                        cin >> opcao_time;
+                        fflush(stdin);
                     }
                     break;
 
@@ -136,8 +146,10 @@ int Menu2::show(Time team_a, Time team_b, Boxscore total){
                     system("cls");
                     printf("\n    Adicionar Assistencias\n");
 
+                    fflush(stdin);
                     printf("Digite o Time A ou B: ");
-                    scanf("%*c%c", &opcao_time);
+                    cin >> opcao_time;
+                    fflush(stdin);
 
                     if(opcao_time == 'A'){
                         team_a.Adicionar_assistencias();
@@ -147,7 +159,8 @@ int Menu2::show(Time team_a, Time team_b, Boxscore total){
 
                     }else{
                         printf("Digite o Time A ou B: ");
-                        scanf("%*c%c", &opcao_time);
+                        cin >> opcao_time;
+                        fflush(stdin);
                     }
                     break;
 
@@ -155,8 +168,10 @@ int Menu2::show(Time team_a, Time team_b, Boxscore total){
                     system("cls");
                     printf("\n    Adicionar Turnovers\n");
 
+                    fflush(stdin);
                     printf("Digite o Time A ou B: ");
-                    scanf("%*c%c", &opcao_time);
+                    cin >> opcao_time;
+                    fflush(stdin);
 
                     if(opcao_time == 'A'){
                         team_a.Adicionar_turnovers();
@@ -166,7 +181,8 @@ int Menu2::show(Time team_a, Time team_b, Boxscore total){
 
                     }else{
                         printf("Digite o Time A ou B: ");
-                        scanf("%*c%c", &opcao_time);
+                        cin >> opcao_time;
+                        fflush(stdin);
                     }
                     break;
 
@@ -174,8 +190,10 @@ int Menu2::show(Time team_a, Time team_b, Boxscore total){
                     system("cls");
                     printf("\n    Adicionar Faltas\n");
 
+                    fflush(stdin);
                     printf("Digite o Time A ou B: ");
-                    scanf("%*c%c", &opcao_time);
+                    cin >> opcao_time;
+                    fflush(stdin);
 
                     if(opcao_time == 'A'){
                         team_a.Adicionar_faltas();
@@ -185,7 +203,8 @@ int Menu2::show(Time team_a, Time team_b, Boxscore total){
 
                     }else{
                         printf("Digite o Time A ou B: ");
-                        scanf("%*c%c", &opcao_time);
+                        cin >> opcao_time;
+                        fflush(stdin);
                     }
                     break;
 

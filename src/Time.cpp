@@ -1,6 +1,7 @@
 #include "Time.h"
 #include <iostream>
 #include <string>
+
 #define MAX_JOGADORES 12
 
 using namespace std;
@@ -19,7 +20,7 @@ void Time::Cadastrar_time(){
         cout << "\nDigite o Nome do Jogador " << i + 1 << ": " << endl;
         getline(cin, nomeJogador[i]);
 
-        cout << "Digite o N�mero do Jogador " << i + 1 << ": " << endl;
+        cout << "Digite o Numero do Jogador " << i + 1 << ": " << endl;
         cin >> numeroJogador[i];
         scanf("%*c");
     }
@@ -34,7 +35,7 @@ void Time::Adicionar_pontos(){
 
     for(int i = 0; i < MAX_JOGADORES; i++){
         if (num == numeroJogador[i]){
-            cout << "Digite quantos pontos foi marcado: " << endl;
+            cout << "Digite quantos pontos foram marcados: " << endl;
             cin >> pontos;
             nPontosMarcados[i] += pontos;
             break;
@@ -89,7 +90,7 @@ void Time::Adicionar_faltas(){
 void Time::Adicionar_assistencias(){
     int num;
 
-    cout << "Digite o numero do jogador que deu a assist�ncia: " << endl;
+    cout << "Digite o numero do jogador que deu a assistencia: " << endl;
     cin >> num;
 
     for(int i = 0; i < MAX_JOGADORES; i++){
