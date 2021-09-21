@@ -81,8 +81,11 @@ void Time::Adicionar_faltas(){
 
     for(int i = 0; i < MAX_JOGADORES; i++){
         if (num == numeroJogador[i]){
-            nFaltas[i] ++;
+            nFaltas[i]++;
             break;
+        }
+        if(nFaltas[i] >= 5){
+            cout << "Jogador Ejetado!" << endl;
         }
     }
 }
