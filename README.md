@@ -1,5 +1,5 @@
 # BoxScore
-<br> O BoxScore foi desenvolvido com a finalidade de simular partidas de basquete, baseadas na NBA. Apresentando o placar do Jogo, com a súmula de cada time no fim do jogo.</br>
+<br> O BoxScore foi desenvolvido com a finalidade de fazer a contagem das estatísticas de partidas de basquete, baseadas na NBA. Apresentando o placar do Jogo, com a súmula de cada time no fim do jogo.</br>
 
 <br>
     <div align="center">
