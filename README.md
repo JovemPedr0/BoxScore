@@ -8,6 +8,6 @@
 
 <br> This project, was desenvolved in group, is the first note from the discipline Language of Programming 1 (OOP/C++), at <a href = http://ci.ufpb.br/>(UFPB)</a>.</br>
 
-## Colaboradores
+## Developers
 - [Mateus Freitas](https://github.com/MateusFreitas-C)
 - [Pedro Lucas](https://github.com/JovemPedr0)
