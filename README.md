@@ -1,13 +1,12 @@
 # BoxScore
-<br> O BoxScore foi desenvolvido com a finalidade de fazer a contagem das estatísticas de partidas de basquete, baseadas na NBA. Apresentando o placar do Jogo, com a súmula de cada time no fim do jogo.</br>
-
+<br> The Boxscore was desenvolved with the objective of simulate and generate a schedule of statistics about a basketball match, based on NBA. Showing the general score from the match.
 <br>
     <div align="center">
         <img src= "https://thumbs.gfycat.com/BruisedDefiniteKissingbug-size_restricted.gif" width = "350" weight = "350">
     </div>
 </br>
 
-<br> Este projeto, desenvolvido em grupo, objetiva a obtenção da primeira nota na disciplina de Linguagem de Programação 1, da Universidade Federal da Paraíba <a href = http://ci.ufpb.br/>(UFPB)</a>.</br>
+<br> This project, was desenvolved in group, is the first note from the discipline Language of Programming 1(OOP/C++), at <a href = http://ci.ufpb.br/>(UFPB)</a>.</br>
 
 ## Colaboradores
 - [Mateus Freitas](https://github.com/MateusFreitas-C)
